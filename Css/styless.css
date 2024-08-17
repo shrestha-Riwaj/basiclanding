@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    height: 100%;
+}
+
+
+.container {
+    position: relative; /* Establishes a positioning context for absolute positioning */
+    width: 300px; /* Container width */
+    height: 200px; /* Container height */
+    margin: 20px; /* Add margin for better visualization */
+}
+
+.new-container{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+}
+
+
+/* First box (bottom box) */
+.box1 {
+    position: absolute; /* Position it absolutely within the container */
+    top: 0; /* Align to the top of the container */
+    left: 0; /* Align to the left of the container */
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+    background-color: lightblue; /* Light blue background */
+    z-index: 1; /* Ensures this box is behind the other */
+}
+
+
+/* Second box (top box) */
+.box2 {
+    position: absolute; /* Position it absolutely within the container */
+    top: 100px; /* Move it down from the top */
+    left: 20px; /* Move it right from the left */
+    width: 100%; /* Width of the second box */
+    height: 100%; /* Height of the second box */
+    background-color: lightcoral; /* Light coral background */
+    z-index: 2; /* Ensures this box is on top of the other */
+}
+
+
+.blog-container{
+    position: relative;
+    width: 200%;
+    height: 100%;
+    margin: 20px;
+
+}
+
+/* .blog-post1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #f2f2f2; 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: calc(33% - 40px);
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+} */
+.blog-post1{
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    z-index: 1;
+    background-color: #f2f2f2; 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 10px;
+   width: 600px;
+   height: auto;
+
+}
+
+.new-post1{
+    position: absolute;
+    top: 500px;
+    left: 20px;
+   z-index: 1;
+    background-color: #f2f2f2; 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    width: 550px;
+    height: auto;
+
+}
+
+.blog-post2{
+    position: absolute; 
+    top: 100px; 
+    left: 400px;
+    background-color: #f2f2f2; 
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 10px;
+    z-index: 2;
+    width: 550px;
+    height: auto;  
+}
+
+.new-post2{
+    position: absolute;
+    top: 800px;
+    left: 50px;
+    z-index: 2;
+    background-color: #f2f2f2; 
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    width: 500px;
+    height: auto;
+
+}
+
+.price{
+    color: #bc1f2c;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.menu-btn{
+    color: #424144;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar{
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    z-index: 999;
+    background-color: #f3f4f6;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+}
+
+.navbar .logo h1{
+    color: #424144;
+    border-bottom: 4px solid #fd6561;
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a{
+    display: block;
+    margin-left: 20px;
+    color: green;
+
+}
